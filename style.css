@@ -1,0 +1,83 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(207, 100%, 40%);
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    min-height: 30vh;
+    padding: 1rem 2rem;
+    background-color: #FFF;
+    border-radius: .3rem;
+}
+
+h2, p { text-align: center; }
+h2 { font-size: 2.5rem; }
+
+a {
+    color: hsl(207, 100%, 50%);
+    text-decoration: none;
+}
+
+a:hover { color: hsl(207, 100%, 30%); }
+
+.form-control {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 40%;
+    right: .5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.toggle-password > i { display: none; }
+
+.form-control > label { display: block; }
+
+.form-control > input {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem .3rem;
+    background-color: #EFEFEF;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.form-control > input:focus { border-color: #999; }
+
+.form-control > input[type="submit"] {
+    border: 2px solid transparent;
+    background-color: hsl(207, 100%, 35%);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+.form-control > input[type="submit"]:hover,
+.form-control > input[type="submit"]:focus {
+    background-color: hsl(207, 100%, 40%);
+}
+
+.form-control > input[type="submit"]:focus {
+    border-color: #999;
+}
